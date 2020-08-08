@@ -1,0 +1,38 @@
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@keyframes example {
+    0%   {
+      clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+    }
+    15%  {
+      clip-path: polygon(36% 6%, 86% 44%, 66% 94%, 13% 64%);
+    }
+    30%  {
+      clip-path: polygon(15% 12%, 89% 18%, 88% 99%, 8% 87%);
+    }
+    45% {
+      clip-path: polygon(6% 33%, 62% 4%, 89% 63%, 33% 93%);
+    }
+    60% {
+      clip-path: polygon(15% 12%, 89% 18%, 88% 99%, 8% 87%);
+    }
+    75%  {
+      clip-path: polygon(36% 6%, 86% 44%, 66% 94%, 13% 64%);
+    }
+    100%   {
+      clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+    }
+  }
+  
+  .animate {
+    animation-name: example;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+  }
+  .transition-image{
+    @apply transform transition-transform duration-500 ease-out cursor-pointer;
+  }

@@ -10,5 +10,8 @@ new Vue({
   created() {
     AOS.init()
   },
+  mounted(){
+    AOS.refresh
+  },
   render: h => h(App),
 }).$mount('#app')

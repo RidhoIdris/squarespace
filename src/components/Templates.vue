@@ -7,13 +7,13 @@
               <p data-aos="fade-left" class="lg:font-medium lg:text-xl leading-none">Whether you’re looking to build a portfolio website<br class="-lg:hidden"/>or an online store, there’s a template for you.</p>
               <span data-aos="fade-left" class="-lg:hidden">SELECT YOUR GOAL</span>
               <ul class="-lg:hidden">
-                  <li data-aos="fade-left" class="font-medium text-2xl hover:text-gray-500 cursor-pointer">Build a portfolio</li>
-                  <li data-aos="fade-left" class="font-medium text-2xl hover:text-gray-500 cursor-pointer">Start a blog</li>
-                  <li data-aos="fade-left" class="font-medium text-2xl hover:text-gray-500 cursor-pointer">Create an online store</li>
-                  <li data-aos="fade-left" class="font-medium text-2xl hover:text-gray-500 cursor-pointer">Sell services</li>
-                  <li data-aos="fade-left" class="font-medium text-2xl hover:text-gray-500 cursor-pointer">Market a business</li>
-                  <li data-aos="fade-left" class="font-medium text-2xl hover:text-gray-500 cursor-pointer">Promote a restaurant</li>
-                  <li data-aos="fade-left" class="font-medium text-2xl hover:text-gray-500 cursor-pointer">Sell apparel</li>
+                  <li data-aos="fade-left" @mouseover="change(1)" class="font-medium text-2xl hover:text-gray-500 cursor-pointer">Build a portfolio</li>
+                  <li data-aos="fade-left" @mouseover="change(2)" class="font-medium text-2xl hover:text-gray-500 cursor-pointer">Start a blog</li>
+                  <li data-aos="fade-left" @mouseover="change(3)" class="font-medium text-2xl hover:text-gray-500 cursor-pointer">Create an online store</li>
+                  <li data-aos="fade-left" @mouseover="change(4)" class="font-medium text-2xl hover:text-gray-500 cursor-pointer">Sell services</li>
+                  <li data-aos="fade-left" @mouseover="change(5)" class="font-medium text-2xl hover:text-gray-500 cursor-pointer">Market a business</li>
+                  <li data-aos="fade-left" @mouseover="change(6)" class="font-medium text-2xl hover:text-gray-500 cursor-pointer">Promote a restaurant</li>
+                  <li data-aos="fade-left" @mouseover="change(7)" class="font-medium text-2xl hover:text-gray-500 cursor-pointer">Sell apparel</li>
               </ul>
               <div data-aos="fade-left" class="flex cursor-pointer items-center space-x-2">
                     <span class="font-medium">ALL TEMPLATES</span>
@@ -22,7 +22,31 @@
                     </svg>
                 </div>
           </div>
-          <div class="relative mt-8 lg:mt-32 lg:w-50p -lg:mx-auto">
+          <div v-show="active == 1" class="relative mt-8 lg:mt-32 lg:w-50p -lg:mx-auto animate__animated animate__fadeIn">
+            <img src="../assets/img/templates1.png" class="-lg:w-full -md:hidden">
+            <img src="../assets/img/templates1_1.png" class="lg:absolute lg:bottom-0 lg:right-0 lg:w-30p lg:-mb-24 lg:-mr-8 -lg:hidden -md:block">
+          </div>
+          <div v-show="active == 2" class="relative mt-8 lg:mt-32 lg:w-50p -lg:mx-auto animate__animated animate__fadeIn">
+            <img src="../assets/img/templates1.png" class="-lg:w-full -md:hidden">
+            <img src="../assets/img/templates1_1.png" class="lg:absolute lg:bottom-0 lg:right-0 lg:w-30p lg:-mb-24 lg:-mr-8 -lg:hidden -md:block">
+          </div>
+          <div v-show="active == 3" class="relative mt-8 lg:mt-32 lg:w-50p -lg:mx-auto animate__animated animate__fadeIn">
+            <img src="../assets/img/templates1.png" class="-lg:w-full -md:hidden">
+            <img src="../assets/img/templates1_1.png" class="lg:absolute lg:bottom-0 lg:right-0 lg:w-30p lg:-mb-24 lg:-mr-8 -lg:hidden -md:block">
+          </div>
+          <div v-show="active == 4" class="relative mt-8 lg:mt-32 lg:w-50p -lg:mx-auto animate__animated animate__fadeIn">
+            <img src="../assets/img/templates1.png" class="-lg:w-full -md:hidden">
+            <img src="../assets/img/templates1_1.png" class="lg:absolute lg:bottom-0 lg:right-0 lg:w-30p lg:-mb-24 lg:-mr-8 -lg:hidden -md:block">
+          </div>
+          <div v-show="active == 5" class="relative mt-8 lg:mt-32 lg:w-50p -lg:mx-auto animate__animated animate__fadeIn">
+            <img src="../assets/img/templates1.png" class="-lg:w-full -md:hidden">
+            <img src="../assets/img/templates1_1.png" class="lg:absolute lg:bottom-0 lg:right-0 lg:w-30p lg:-mb-24 lg:-mr-8 -lg:hidden -md:block">
+          </div>
+          <div v-show="active == 6" class="relative mt-8 lg:mt-32 lg:w-50p -lg:mx-auto animate__animated animate__fadeIn">
+            <img src="../assets/img/templates1.png" class="-lg:w-full -md:hidden">
+            <img src="../assets/img/templates1_1.png" class="lg:absolute lg:bottom-0 lg:right-0 lg:w-30p lg:-mb-24 lg:-mr-8 -lg:hidden -md:block">
+          </div>
+          <div v-show="active == 7" class="relative mt-8 lg:mt-32 lg:w-50p -lg:mx-auto animate__animated animate__fadeIn">
             <img src="../assets/img/templates1.png" class="-lg:w-full -md:hidden">
             <img src="../assets/img/templates1_1.png" class="lg:absolute lg:bottom-0 lg:right-0 lg:w-30p lg:-mb-24 lg:-mr-8 -lg:hidden -md:block">
           </div>
@@ -32,6 +56,16 @@
 
 <script>
 export default {
-    name : 'Templates'
+    name : 'Templates',
+    data(){
+        return{
+            active : 1,
+        }
+    },
+    methods: {
+        change(data) {
+            this.active = data
+        }
+  }
 }
 </script>

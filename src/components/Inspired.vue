@@ -1,5 +1,5 @@
 <template>
-    <div style="background-color:#F0F0F0" class="py-24 relative -lg:px-4">
+    <div style="background-color:#F0F0F0" class="py-24 relative -lg:px-4 overflow-hidden">
         <img data-aos="fade-right" src="../assets/img/flower2.png" class="absolute top-0 right-0 w-30p">
         <div class="container mx-auto h-full flex-col flex justify-center space-y-6">
             <h1 data-aos="fade-down" class="font-medium text-4xl lg:text-5xl leading-none">Stay inspired with <br class="-lg:hidden"/> modern solutions.</h1>

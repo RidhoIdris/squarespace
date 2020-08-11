@@ -1,5 +1,5 @@
 <template>
-  <div id="app" class="font-roboto">
+  <div id="app" class="font-roboto overflow-hidden">
     <Header/>
     <Ideas/>
     <Templates/>

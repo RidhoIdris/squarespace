@@ -27,9 +27,38 @@
       clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
     }
   }
+@keyframes example2 {
+    0%   {
+      clip-path: polygon(15% 12%, 89% 18%, 88% 99%, 8% 87%);
+    }
+    15%  {
+      
+      clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+    }
+    30%  {
+      clip-path: polygon(36% 6%, 86% 44%, 66% 94%, 13% 64%);
+    }
+    45% {
+      clip-path: polygon(15% 12%, 89% 18%, 88% 99%, 8% 87%);
+    }
+    60% {
+      clip-path: polygon(6% 33%, 62% 4%, 89% 63%, 33% 93%);
+    }
+    75%  {
+      clip-path: polygon(36% 6%, 86% 44%, 66% 94%, 13% 64%);
+    }
+    100%   {
+      clip-path: polygon(15% 12%, 89% 18%, 88% 99%, 8% 87%);
+    }
+  }
   
   .animate {
     animation-name: example;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+  }
+  .animate2 {
+    animation-name: example2;
     animation-duration: 6s;
     animation-iteration-count: infinite;
   }

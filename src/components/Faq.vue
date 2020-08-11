@@ -1,5 +1,5 @@
 <template>
-    <div class="bg-black text-white flex items-center relative py-16 -lg:px-4">
+    <div class="bg-black text-white flex items-center relative py-16 -lg:px-4 overflow-hidden">
         <div class="container mx-auto relative">
             <h1 data-aos="fade-down" class="font-medium text-4xl lg:text-5xl leading-none">We’ve got you<br class="-lg:hidden"/>covered, 24/7.</h1>
             <img data-aos="fade-left" src="../assets/img/buterfly.png" class="absolute right-0 top-0 w-10p lg:w-40 -mt-10">

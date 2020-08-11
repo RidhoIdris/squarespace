@@ -1,5 +1,5 @@
 <template>
-  <div class="py-32 relative -lg:px-4" style="background-color:#F0F0F0">
+  <div class="py-32 relative -lg:px-4 templates-section" style="background-color:#F0F0F0">
       <img data-aos="fade-left" src="../assets/img/flower4.png" class="absolute  right-0 top-0 -lg:hidden">
       <div class="container mx-auto h-full flex -lg:flex-col justify-between items-center">
           <div class="flex flex-col -lg:items-center -lg:text-center space-y-4 lg:space-y-8">
@@ -22,7 +22,7 @@
                     </svg>
                 </div>
           </div>
-          <carousel :navigateTo="active" perPage="1" paginationActiveColor="#F0D9F0" paginationColor="#515151" class="flex justify-center items-center lg:w-60p lg:-mb-64 -lg:mt-8 relative" style="z-index:99999">
+          <carousel :navigateTo="active" perPage="1" paginationActiveColor="#F0D9F0" paginationColor="#515151" class="flex justify-center items-center lg:w-60p lg:-mb-64 -lg:mt-8 relative">
             <slide>
               <div class="relative -lg:mx-auto animate__animated animate__fadeIn">
                 <img src="../assets/img/templates1_1_1.png" class="-lg:hidden">
@@ -100,7 +100,7 @@ export default {
 
 <style>
   @media screen and (min-width: 1024px) {
-    .VueCarousel-pagination{
+    .templates-section .VueCarousel-pagination{
       visibility: hidden !important;
     }
   }

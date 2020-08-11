@@ -1,9 +1,9 @@
 <template>
   <div id="app" class="font-roboto overflow-hidden">
     <Header/>
-    <Ideas/>
+    <Ideas class="my-12"/>
     <Templates/>
-    <Slider class="-lg:hidden"/>
+    <Slider/>
     <OnBrand/>
     <GettingStarted/>
     <Customers/>

@@ -4,7 +4,9 @@ import './assets/index.css'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
 import 'animate.css/animate.min.css';
+import MQ from 'vue-match-media/src'
 
+Vue.use(MQ)
 Vue.config.productionTip = false
 
 new Vue({

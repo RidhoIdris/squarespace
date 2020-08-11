@@ -17,7 +17,9 @@
     "postcss-cli": "^7.1.1",
     "swiper": "^6.1.1",
     "tailwindcss": "^1.6.2",
-    "vue": "^2.6.11"
+    "vue": "^2.6.11",
+    "vue-carousel": "^0.18.0",
+    "vue-match-media": "^1.0.3"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "~4.4.0",

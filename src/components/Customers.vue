@@ -46,7 +46,7 @@
   </div>
 </template>
 
-<script>
+<script scoped>
 import Swiper from 'swiper/bundle';
 import 'swiper/swiper-bundle.css';
 export default {
@@ -78,7 +78,7 @@ export default {
     },
 }
 </script>
-<style>
+<style scoped>
   @media screen and (min-width: 992px) {
     .bulet{
       margin-left: -120px !important;

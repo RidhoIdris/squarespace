@@ -1,19 +1,19 @@
 <template>
-  <div class="py-32 relative overflow-hidden -lg:px-4" style="background-color:#F0F0F0">
-      <img data-aos="fade-left" src="../assets/img/flower4.png" class="absolute right-0 top-0 -lg:hidden">
-      <div class="container mx-auto h-full flex -lg:flex-col items-center lg:space-x-16">
+  <div class="py-32 relative -lg:px-4" style="background-color:#F0F0F0">
+      <img data-aos="fade-left" src="../assets/img/flower4.png" class="absolute  right-0 top-0 -lg:hidden">
+      <div class="container mx-auto h-full flex -lg:flex-col justify-between items-center">
           <div class="flex flex-col -lg:items-center -lg:text-center space-y-4 lg:space-y-8">
               <h1 data-aos="fade-down" class="font-medium -lg:text-center text-3xl md:text-4xl lg:text-5xl leading-none">Templates for every<br class="-lg:hidden"/>style and purpose.</h1>
               <p data-aos="fade-left" class="lg:font-medium lg:text-xl leading-none">Whether you’re looking to build a portfolio website<br class="-lg:hidden"/>or an online store, there’s a template for you.</p>
               <span data-aos="fade-left" class="-lg:hidden">SELECT YOUR GOAL</span>
               <ul class="-lg:hidden">
-                  <li data-aos="fade-left" @mouseover="change(1)" class="font-medium text-2xl hover:text-gray-500 cursor-pointer">Build a portfolio</li>
-                  <li data-aos="fade-left" @mouseover="change(2)" class="font-medium text-2xl hover:text-gray-500 cursor-pointer">Start a blog</li>
-                  <li data-aos="fade-left" @mouseover="change(3)" class="font-medium text-2xl hover:text-gray-500 cursor-pointer">Create an online store</li>
-                  <li data-aos="fade-left" @mouseover="change(4)" class="font-medium text-2xl hover:text-gray-500 cursor-pointer">Sell services</li>
-                  <li data-aos="fade-left" @mouseover="change(5)" class="font-medium text-2xl hover:text-gray-500 cursor-pointer">Market a business</li>
-                  <li data-aos="fade-left" @mouseover="change(6)" class="font-medium text-2xl hover:text-gray-500 cursor-pointer">Promote a restaurant</li>
-                  <li data-aos="fade-left" @mouseover="change(7)" class="font-medium text-2xl hover:text-gray-500 cursor-pointer">Sell apparel</li>
+                  <li data-aos="fade-left" @mouseover="change(0)" class="font-medium text-2xl hover:text-gray-700 cursor-pointer">Build a portfolio</li>
+                  <li data-aos="fade-left" @mouseover="change(1)" class="font-medium text-2xl hover:text-gray-700 cursor-pointer">Start a blog</li>
+                  <li data-aos="fade-left" @mouseover="change(2)" class="font-medium text-2xl hover:text-gray-700 cursor-pointer">Create an online store</li>
+                  <li data-aos="fade-left" @mouseover="change(3)" class="font-medium text-2xl hover:text-gray-700 cursor-pointer">Sell services</li>
+                  <li data-aos="fade-left" @mouseover="change(4)" class="font-medium text-2xl hover:text-gray-700 cursor-pointer">Market a business</li>
+                  <li data-aos="fade-left" @mouseover="change(5)" class="font-medium text-2xl hover:text-gray-700 cursor-pointer">Promote a restaurant</li>
+                  <li data-aos="fade-left" @mouseover="change(6)" class="font-medium text-2xl hover:text-gray-700 cursor-pointer">Sell apparel</li>
               </ul>
               <div data-aos="fade-left" class="flex cursor-pointer items-center space-x-2">
                     <span class="font-medium">ALL TEMPLATES</span>
@@ -22,50 +22,86 @@
                     </svg>
                 </div>
           </div>
-          <div v-show="active == 1" class="relative mt-8 lg:mt-32 lg:w-50p -lg:mx-auto animate__animated animate__fadeIn">
-            <img src="../assets/img/templates1.png" class="-lg:w-full -md:hidden">
-            <img src="../assets/img/templates1_1.png" class="lg:absolute lg:bottom-0 lg:right-0 lg:w-30p lg:-mb-24 lg:-mr-8 -lg:hidden -md:block">
-          </div>
-          <div v-show="active == 2" class="relative mt-8 lg:mt-32 lg:w-50p -lg:mx-auto animate__animated animate__fadeIn">
-            <img src="../assets/img/templates1.png" class="-lg:w-full -md:hidden">
-            <img src="../assets/img/templates1_1.png" class="lg:absolute lg:bottom-0 lg:right-0 lg:w-30p lg:-mb-24 lg:-mr-8 -lg:hidden -md:block">
-          </div>
-          <div v-show="active == 3" class="relative mt-8 lg:mt-32 lg:w-50p -lg:mx-auto animate__animated animate__fadeIn">
-            <img src="../assets/img/templates1.png" class="-lg:w-full -md:hidden">
-            <img src="../assets/img/templates1_1.png" class="lg:absolute lg:bottom-0 lg:right-0 lg:w-30p lg:-mb-24 lg:-mr-8 -lg:hidden -md:block">
-          </div>
-          <div v-show="active == 4" class="relative mt-8 lg:mt-32 lg:w-50p -lg:mx-auto animate__animated animate__fadeIn">
-            <img src="../assets/img/templates1.png" class="-lg:w-full -md:hidden">
-            <img src="../assets/img/templates1_1.png" class="lg:absolute lg:bottom-0 lg:right-0 lg:w-30p lg:-mb-24 lg:-mr-8 -lg:hidden -md:block">
-          </div>
-          <div v-show="active == 5" class="relative mt-8 lg:mt-32 lg:w-50p -lg:mx-auto animate__animated animate__fadeIn">
-            <img src="../assets/img/templates1.png" class="-lg:w-full -md:hidden">
-            <img src="../assets/img/templates1_1.png" class="lg:absolute lg:bottom-0 lg:right-0 lg:w-30p lg:-mb-24 lg:-mr-8 -lg:hidden -md:block">
-          </div>
-          <div v-show="active == 6" class="relative mt-8 lg:mt-32 lg:w-50p -lg:mx-auto animate__animated animate__fadeIn">
-            <img src="../assets/img/templates1.png" class="-lg:w-full -md:hidden">
-            <img src="../assets/img/templates1_1.png" class="lg:absolute lg:bottom-0 lg:right-0 lg:w-30p lg:-mb-24 lg:-mr-8 -lg:hidden -md:block">
-          </div>
-          <div v-show="active == 7" class="relative mt-8 lg:mt-32 lg:w-50p -lg:mx-auto animate__animated animate__fadeIn">
-            <img src="../assets/img/templates1.png" class="-lg:w-full -md:hidden">
-            <img src="../assets/img/templates1_1.png" class="lg:absolute lg:bottom-0 lg:right-0 lg:w-30p lg:-mb-24 lg:-mr-8 -lg:hidden -md:block">
-          </div>
+          <carousel :navigateTo="active" perPage="1" paginationActiveColor="#F0D9F0" paginationColor="#515151" class="flex justify-center items-center lg:w-60p lg:-mb-64 -lg:mt-8 relative" style="z-index:99999">
+            <slide>
+              <div class="relative -lg:mx-auto animate__animated animate__fadeIn">
+                <img src="../assets/img/templates1_1_1.png" class="-lg:hidden">
+                <img src="../assets/img/templates1.png" class="lg:hidden -lg:w-full -md:hidden">
+                <img src="../assets/img/templates1_1.png" class="lg:hidden -lg:hidden -md:block -md:mx-auto">
+              </div>
+            </slide>
+            <slide>
+              <div class="relative  -lg:mx-auto animate__animated animate__fadeIn">
+                <img src="../assets/img/templates1_1_1.png" class="-lg:hidden">
+                <img src="../assets/img/templates1.png" class="lg:hidden -lg:w-full -md:hidden">
+                <img src="../assets/img/templates1_1.png" class="lg:hidden -lg:hidden -md:block -md:mx-auto">
+              </div>
+            </slide>
+            <slide>
+              <div class="relative  -lg:mx-auto animate__animated animate__fadeIn">
+                <img src="../assets/img/templates1_1_1.png" class="-lg:hidden">
+                <img src="../assets/img/templates1.png" class="lg:hidden -lg:w-full -md:hidden">
+                <img src="../assets/img/templates1_1.png" class="lg:hidden -lg:hidden -md:block -md:mx-auto">
+              </div>
+            </slide>
+            <slide>
+              <div class="relative -lg:mx-auto animate__animated animate__fadeIn">
+                <img src="../assets/img/templates1_1_1.png" class="-lg:hidden">
+                <img src="../assets/img/templates1.png" class="lg:hidden -lg:w-full -md:hidden">
+                <img src="../assets/img/templates1_1.png" class="lg:hidden -lg:hidden -md:block -md:mx-auto">
+              </div>
+            </slide>
+            <slide>
+              <div class="relative -lg:mx-auto animate__animated animate__fadeIn">
+                <img src="../assets/img/templates1_1_1.png" class="-lg:hidden">
+                <img src="../assets/img/templates1.png" class="lg:hidden -lg:w-full -md:hidden">
+                <img src="../assets/img/templates1_1.png" class="lg:hidden -lg:hidden -md:block -md:mx-auto">
+              </div>
+            </slide>
+            <slide>
+              <div class="relative -lg:mx-auto animate__animated animate__fadeIn">
+                <img src="../assets/img/templates1_1_1.png" class="-lg:hidden">
+                <img src="../assets/img/templates1.png" class="lg:hidden -lg:w-full -md:hidden">
+                <img src="../assets/img/templates1_1.png" class="lg:hidden -lg:hidden -md:block -md:mx-auto">
+              </div>
+            </slide>
+            <slide>
+            <div class="relative -lg:mx-auto animate__animated animate__fadeIn">
+              <img src="../assets/img/templates1_1_1.png" class="-lg:hidden">
+                <img src="../assets/img/templates1.png" class="lg:hidden -lg:w-full -md:hidden">
+                <img src="../assets/img/templates1_1.png" class="lg:hidden -lg:hidden -md:block -md:mx-auto">
+            </div>
+            </slide>
+
+          </carousel>
       </div>
   </div>
 </template>
 
 <script>
+import { Carousel, Slide } from 'vue-carousel';
 export default {
     name : 'Templates',
     data(){
         return{
-            active : 1,
+            active : 0,
         }
     },
     methods: {
-        change(data) {
-            this.active = data
-        }
-  }
+      change(data) {
+          this.active = Number(data)
+      },
+    },
+    components:{
+      Carousel,Slide
+    },
 }
 </script>
+
+<style>
+  @media screen and (min-width: 1024px) {
+    .VueCarousel-pagination{
+      visibility: hidden !important;
+    }
+  }
+</style>
